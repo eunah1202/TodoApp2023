@@ -1,0 +1,25 @@
+// TodoTemplate 컴포넌트에서 생성한 class이름 써준것 
+// css와 scss적는 방법에 차이가 있는데 전자는 >로 표현해준 반면 후자는 {}안에 자식들 넣어준다.
+
+$background-color:#22b8cf;
+
+.TodoTemplate{
+  width:512px;
+  margin:6rem auto;
+  border-radius:4px;
+  overflow:hidden;
+  
+  // .todoTemplate의 자식들을 그냥 안에다가 작성해준다.
+  .app-title{
+    // 자주사용하는 값들을 변수로 만들 수 있어 ex)$background-color:#22b8cf; 맨위에 써주고 쓰고 싶은 곳에 $~속성이름만 써준다
+    background:$background-color;
+    color:#fff;
+    height:4rem;
+    font-size:1.5rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .content{background:#fff;}
+}
